@@ -937,16 +937,16 @@ function toggleAll(className, btnId) {
       const budgetTotal = budgetTotalSurf + budgetTotalVelo + budgetTotalNourriture + budgetTotalTrajet + budgetTotalDeplacement + budgetTotalSupplementaire + budgetTotalCamping;
       const budgetParPersonne = budgetTotal / personnes;
 
-      document.getElementById('budget-total').textContent = budgetTotal.toLocaleString('fr-FR') + ' &euro;';
-      document.getElementById('budget-par-personne').textContent = budgetParPersonne.toLocaleString('fr-FR') + ' &euro;';
+      document.getElementById('budget-total').textContent = budgetTotal.toLocaleString('fr-FR') + ' \u20AC';
+      document.getElementById('budget-par-personne').textContent = budgetParPersonne.toLocaleString('fr-FR') + ' \u20AC';
 
-      document.getElementById('detail-surf').textContent = budgetTotalSurf.toLocaleString('fr-FR') + ' &euro;';
-      document.getElementById('detail-velo').textContent = budgetTotalVelo.toLocaleString('fr-FR') + ' &euro;';
-      document.getElementById('detail-nourriture').textContent = budgetTotalNourriture.toLocaleString('fr-FR') + ' &euro;';
+      document.getElementById('detail-surf').textContent = budgetTotalSurf.toLocaleString('fr-FR') + ' \u20AC';
+      document.getElementById('detail-velo').textContent = budgetTotalVelo.toLocaleString('fr-FR') + ' \u20AC';
+      document.getElementById('detail-nourriture').textContent = budgetTotalNourriture.toLocaleString('fr-FR') + ' \u20AC';
       document.getElementById('detail-trajet').textContent = budgetTotalTrajet.toLocaleString('fr-FR') + ' \u20AC';
-      document.getElementById('detail-deplacement').textContent = budgetTotalDeplacement.toLocaleString('fr-FR') + ' &euro;';
-      document.getElementById('detail-supplementaire').textContent = budgetTotalSupplementaire.toLocaleString('fr-FR') + ' &euro;';
-      document.getElementById('detail-camping').textContent = budgetTotalCamping.toLocaleString('fr-FR') + ' &euro;';
+      document.getElementById('detail-deplacement').textContent = budgetTotalDeplacement.toLocaleString('fr-FR') + ' \u20AC';
+      document.getElementById('detail-supplementaire').textContent = budgetTotalSupplementaire.toLocaleString('fr-FR') + ' \u20AC';
+      document.getElementById('detail-camping').textContent = budgetTotalCamping.toLocaleString('fr-FR') + ' \u20AC';
 
       document.getElementById('resultat').classList.add('show');
     }
@@ -956,4 +956,5 @@ function toggleAll(className, btnId) {
 
 </body>
 </html>
+
 
